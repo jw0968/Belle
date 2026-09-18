@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Preview Zelle clone (Chrome, iPhone size)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173/index.html",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "serve",
+      "runtimeArgs": ["--window-size=430,960", "--auto-open-devtools-for-tabs"]
+    }
+  ]
+}
