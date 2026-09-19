@@ -85,27 +85,82 @@ svg{display:block}
 .band .t{position:absolute;left:21px;top:16.6px;font-weight:600;font-size:11.9px;line-height:1;color:var(--ink)}
 .band .chev-u{position:absolute;left:351px;top:17.6px;width:15.7px;height:8.7px}
 .band-line{position:absolute;left:16px;right:16.3px;top:47px;height:1px;background:var(--line)}
-/* ---------- home ---------- */
-#s-home .menu{padding-top:8px}
-.menu-row{position:relative;height:56px;margin:0 16.3px 0 16px;display:flex;align-items:center}
-.menu-row .ic{width:28.3px;height:28.3px;margin-left:1.7px;flex:none;color:var(--icon)}
-.menu-row .lbl{margin-left:7.7px;font-size:13.8px;color:var(--ink);white-space:nowrap;flex:1}
-.menu-row .lbl img{height:14px;width:38.67px;vertical-align:-1px;margin-left:4px}
-.menu-row .chev{margin-right:3.4px;color:var(--icon)}
-.menu-row:active{background:#f5f7fa}
-.act-wrap{position:absolute;left:0;right:0;top:230px;bottom:0}
-#act-list{position:absolute;left:0;right:0;top:48px;bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
-.act-row{position:relative;height:88px;margin:0 16.3px 0 16px;border-bottom:1px solid var(--line)}
-.act-row .avatar{position:absolute;left:5px;top:19px}
-.act-row .nm{position:absolute;left:61.5px;right:110px;top:20px;font-size:15px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
-.act-row .sub{position:absolute;left:62px;right:110px;top:42px;font-size:11.9px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink2)}
-.act-row .amt{position:absolute;right:4px;top:19px;font-size:15px;line-height:1;color:var(--ink);text-align:right}
-.act-row .st{position:absolute;right:4px;top:42px;font-size:11px;line-height:1;color:var(--ink2);text-align:right}
-.act-row .again{position:absolute;left:62px;top:63px;font-size:11.9px;line-height:1;color:var(--blue);padding:2px 0}
-.empty{position:absolute;left:32px;right:32px;top:120px;text-align:center;color:var(--ink2)}
-.empty .h{font-size:15.7px;color:var(--ink);margin-bottom:8px}
-.empty .p{font-size:12.4px;line-height:18px}
-.empty svg{margin:0 auto 18px}
+/* ---------- home (Zelle hub) ---------- */
+#s-home{background:var(--navbg)}
+#s-home .nav-title{font-weight:400;font-size:16.2px}
+#s-home .nav-gear{position:absolute;left:330px;top:0;width:44px;height:44px}
+#s-home .nav-gear svg{position:absolute;left:12px;top:11.3px;width:19.7px;height:21px;color:var(--icon)}
+#s-home .hub{position:absolute;left:0;right:0;top:calc(var(--sat) + 54px);bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:15px 0 calc(var(--sab) + 30px)}
+.card{position:relative;margin-left:15.33px;width:359.33px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);border-radius:10px}
+.card .ttl{position:absolute;left:16.67px;font-weight:600;line-height:1;color:var(--ink);white-space:nowrap}
+/* messages */
+.card.msgs{height:85px}
+.card.msgs .bell{position:absolute;left:17.67px;top:17.3px;width:15.7px;height:16.3px;color:var(--icon)}
+.card.msgs .h{position:absolute;left:58.67px;top:20.8px;font-weight:600;font-size:12.7px;line-height:1;color:var(--ink)}
+.card.msgs .p{position:absolute;left:43.67px;top:42.9px;font-size:14.1px;line-height:1;color:var(--ink);white-space:nowrap}
+/* heading */
+.hub .heading{display:flex;align-items:flex-start;margin:42.3px 0 0 16px;height:20.6px}
+.hub .heading span{font-weight:600;font-size:20.6px;line-height:1;color:var(--ink);white-space:nowrap}
+.hub .heading img{width:54.7px;height:19.8px;margin:3.4px 0 0 7.4px}
+/* tiles */
+.tiles{display:flex;margin:18.1px 0 0 15.33px;gap:6.67px}
+.tile{position:relative;width:115.33px;height:92px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);border-radius:8px;color:var(--ink)}
+.tile:active{background:#f5f7fa}
+.tile svg{position:absolute;color:var(--blue)}
+.tile .l{position:absolute;left:0;right:0;top:56px;text-align:center;font-weight:600;font-size:15.5px;line-height:1}
+.tile.send svg{left:41.3px;top:20.7px;width:29.7px;height:21.7px}
+.tile.req svg{left:42px;top:17.7px;width:28.3px;height:27.7px}
+.tile.qr svg{left:42px;top:17.3px;width:28.3px;height:28.3px}
+/* pay again */
+.card.pay{margin-top:39.3px;height:221.5px}
+.card.pay .ttl{top:18.3px;font-size:16px}
+.card.pay .cols{position:absolute;left:4.67px;top:0;width:350px;height:100%;display:flex}
+.card.pay .col{position:relative;width:116.67px;height:100%;text-align:center;color:var(--ink)}
+.card.pay .col .avatar{position:absolute;left:30px;top:57.3px}
+.card.pay .col .avatar .badge{display:none}
+.card.pay .col .n{position:absolute;left:0;right:0;top:121px;font-size:14.2px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card.pay .col .p{position:absolute;left:0;right:0;top:146.1px;font-weight:600;font-size:12px;line-height:1;white-space:nowrap}
+.card.pay .col:active .avatar{opacity:.7}
+.pill{position:absolute;height:27.7px;border-radius:4px;background:#ebf2f9;color:var(--blue);font-weight:600;font-size:14.1px;line-height:1;white-space:nowrap}
+.pill:active{background:#d9e7f5}
+.card.pay .pill{left:204.33px;top:176.4px;width:138px}
+.card.pay .pill svg{position:absolute;left:9.3px;top:6.5px;width:13px;height:15.3px}
+.card.pay .pill span{position:absolute;left:27.6px;top:7.2px}
+/* activity */
+.card.act{margin-top:30px}
+.card.act .ttl{top:17.9px;font-size:16.1px}
+.card.act .tabs{position:absolute;left:0;top:52.6px;width:100%;height:24px}
+.card.act .tab{position:absolute;top:0;font-size:14.2px;line-height:1;color:var(--ink2)}
+.card.act .tab.on{color:var(--blue)}
+.card.act .tab.t1{left:0;width:178px;text-align:center}
+.card.act .tab.t2{left:178px;width:180px;text-align:center}
+.card.act .uline{position:absolute;left:20.67px;top:72.3px;width:138.7px;height:3.5px;background:var(--blue)}
+.card.act .rows{padding-top:76px}
+.arow{position:relative;height:93.33px;margin:0 16px 0 16.67px;border-bottom:1px solid var(--line);color:var(--ink)}
+.arow .nm{position:absolute;left:0;right:90px;top:27.6px;font-weight:600;font-size:14.1px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arow .memo{position:absolute;left:0;right:90px;top:46px;font-size:11.9px;line-height:1;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arow .dt{position:absolute;left:0;top:63px;font-size:12px;line-height:1;color:var(--ink2);white-space:nowrap}
+.arow .amt{position:absolute;right:25px;top:35.7px;font-size:13.9px;line-height:1;text-align:right}
+.arow .st{position:absolute;right:25px;top:54.3px;font-size:11.9px;line-height:1;color:var(--ink2);text-align:right}
+.arow .chev{position:absolute;left:314.3px;top:46.3px;width:5.7px;height:10.3px;color:var(--icon)}
+.arow:active{background:#f5f7fa}
+.arow:last-child{border-bottom:0}
+.card.act .none{position:relative;height:93.33px;margin:0 16px 0 16.67px;border-bottom:1px solid var(--line)}
+.card.act .none div{position:absolute;left:0;top:35px;font-size:14.1px;line-height:1;color:var(--ink)}
+.card.act .foot{position:relative;height:59.7px}
+.card.act .foot .q{position:absolute;left:21.67px;top:21px;width:17.7px;height:17.7px;color:var(--blue)}
+.card.act .foot .pill{left:230.67px;top:16px;width:111.7px}
+.card.act .foot .pill span{position:absolute;left:8.7px;top:6.3px}
+/* management */
+.card.mg{margin-top:30px;height:250px}
+.card.mg .ttl{top:18.3px;font-size:16px}
+.mrow{position:absolute;left:0;width:100%;height:69px}
+.mrow svg{position:absolute;left:18.67px;top:3px;width:21px;height:21px;color:var(--blue)}
+.mrow .l{position:absolute;left:47.67px;top:-2.4px;font-weight:600;font-size:14.1px;line-height:1;color:var(--ink);white-space:nowrap}
+.mrow .s{position:absolute;left:48.67px;top:16.3px;font-size:11.9px;line-height:1;color:var(--ink2);white-space:nowrap}
+.mrow .chev{position:absolute;left:331.67px;top:8.3px;width:5.7px;height:10.3px;color:var(--icon)}
+.mrow .line{position:absolute;left:16.67px;right:16px;top:48px;height:1px;background:var(--line)}
+.mrow:active{background:#f5f7fa}
 /* ---------- pick recipient ---------- */
 #s-pick .search-ic{position:absolute;left:17px;top:73px;width:18px;height:18px}
 #s-pick .search-in{position:absolute;left:44px;top:68px;width:270px;height:34px;border:0;background:transparent;font-size:15.9px;color:var(--ink);padding:0;margin:0;caret-color:var(--blue)}
@@ -226,43 +281,51 @@ svg{display:block}
   #s-amount .btn-primary,#s-confirm .btn-primary{top:auto}
   #s-confirm .check{top:73.4px}#s-confirm .recv{top:132.5px}#s-confirm .amt{top:171.4px}#s-confirm .avatar{top:224.1px}#s-confirm .nm{top:286.4px}#s-confirm .reg{top:306.3px}#s-confirm .ph{top:320.4px}
   #s-confirm .siri-t{top:400.4px}#s-confirm .siri-b{top:446.4px}
-  .act-wrap{top:214px}.menu-row{height:50px}#s-home .menu{padding-top:6px}
 }
 </style>
 </head>
 <body>
 <div id="app">
 
-<!-- ================= HOME / ACTIVITY ================= -->
+<!-- ================= HOME / ZELLE HUB ================= -->
 <div class="screen" id="s-home">
   <div class="nav">
-    <button class="nav-left" id="btn-settings" aria-label="Profile and demo settings">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10.6"/><circle cx="12" cy="9.4" r="3.6"/><path d="M4.6 19.3c1.5-3.2 4.1-4.9 7.4-4.9s5.9 1.7 7.4 4.9"/></svg>
-    </button>
-    <div class="nav-title">Send money with Zelle<sup style="font-size:9px;vertical-align:6px">®</sup></div>
+    <button class="nav-back" data-inert aria-label="Back"><svg viewBox="0 0 12.6 16.3" fill="none" stroke="#5b6c7b" stroke-width="2.6"><path d="M10.6 1.3L3.5 8.15l7.1 6.85"/></svg></button>
+    <div class="nav-title">Zelle®</div>
+    <button class="nav-gear" id="btn-settings" aria-label="Demo settings"><svg viewBox="0 0 20 21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M17.24 9.56 L19.55 9.57 L19.55 11.43 L17.24 11.44 L15.79 14.95 L17.41 16.60 L16.10 17.91 L14.45 16.29 L10.94 17.74 L10.93 20.05 L9.07 20.05 L9.06 17.74 L5.55 16.29 L3.90 17.91 L2.59 16.60 L4.21 14.95 L2.76 11.44 L0.45 11.43 L0.45 9.57 L2.76 9.56 L4.21 6.05 L2.59 4.40 L3.90 3.09 L5.55 4.71 L9.06 3.26 L9.07 0.95 L10.93 0.95 L10.94 3.26 L14.45 4.71 L16.10 3.09 L17.41 4.40 L15.79 6.05 Z"/><circle cx="10" cy="10.5" r="3.6"/></svg></button>
   </div>
-  <div class="body">
-    <div class="menu">
-      <div class="menu-row" id="btn-send">
-        <svg class="ic" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14h20M15 6l8 8-8 8"/></svg>
-        <div class="lbl">Send money</div>
-        <svg class="chev chev-r" viewBox="0 0 7.3 12.7" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 .9l4.9 5.45L1 11.8"/></svg>
-      </div>
-      <div class="menu-row inert" data-inert>
-        <svg class="ic" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M25 14H5M13 6l-8 8 8 8"/></svg>
-        <div class="lbl">Request money</div>
-        <svg class="chev chev-r" viewBox="0 0 7.3 12.7" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 .9l4.9 5.45L1 11.8"/></svg>
-      </div>
-      <div class="menu-row inert" data-inert>
-        <svg class="ic" viewBox="0 0 28.3 28.3" fill="none" stroke="currentColor"><path stroke-width="2.3" d="M1.15 8.5V1.15H8.5M19.8 1.15h7.35V8.5M27.15 19.8v7.35H19.8M8.5 27.15H1.15V19.8"/><g stroke-width="1.9"><rect x="6.1" y="6.1" width="6.9" height="6.9"/><rect x="15.3" y="6.1" width="6.9" height="6.9"/><rect x="6.1" y="15.3" width="6.9" height="6.9"/><rect x="15.3" y="15.3" width="6.9" height="6.9"/></g><g fill="currentColor" stroke="none"><rect x="8.5" y="8.5" width="2.1" height="2.1"/><rect x="17.7" y="8.5" width="2.1" height="2.1"/><rect x="8.5" y="17.7" width="2.1" height="2.1"/><rect x="17.7" y="17.7" width="2.1" height="2.1"/></g></svg>
-        <div class="lbl">Scan QR code to pay with <img alt="Zelle" src="data:image/png;base64,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"></div>
-        <svg class="chev chev-r" viewBox="0 0 7.3 12.7" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 .9l4.9 5.45L1 11.8"/></svg>
+  <div class="hub" id="hub">
+    <div class="card msgs" data-inert>
+      <svg class="bell" viewBox="0 0 15.7 16.3" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M2.6 12.6V7.2c0-3 2.3-5.4 5.25-5.4s5.25 2.4 5.25 5.4v5.4l1.7 1.6H.9zM5.6 14.4c.3 1 1.2 1.6 2.25 1.6s1.95-.6 2.25-1.6"/></svg>
+      <div class="h">Messages</div>
+      <div class="p">You don’t have any messages.</div>
+    </div>
+    <div class="heading"><span>Send &amp; receive money with</span><img alt="Zelle" src="data:image/png;base64,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"></div>
+    <div class="tiles">
+      <button class="tile send" id="btn-send"><svg viewBox="0 0 29.7 21.7" fill="none" stroke="currentColor"><circle cx="18.9" cy="10.85" r="9.5" stroke-width="2.2"/><path stroke-width="2.2" stroke-linecap="round" d="M4.2 4.9h3.3M1.1 10.85h6.4M4.2 16.8h3.3"/><text x="18.9" y="15.9" text-anchor="middle" font-family="OS" font-weight="700" font-size="14.5" fill="currentColor" stroke="none">$</text></svg><div class="l">Send</div></button>
+      <button class="tile req" data-inert><svg viewBox="0 0 28.3 27.7" fill="none" stroke="currentColor"><path stroke-width="2.2" d="M3.7 9.6A12 12 0 1 1 2.35 15.4" stroke-linecap="round"/><path stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M2.3 3.6v6.5h6.5"/><text x="14.5" y="19.3" text-anchor="middle" font-family="OS" font-weight="700" font-size="14.5" fill="currentColor" stroke="none">$</text></svg><div class="l">Request</div></button>
+      <button class="tile qr" data-inert><svg viewBox="0 0 28.3 28.3" fill="none" stroke="currentColor"><path stroke-width="2.3" d="M1.15 8.5V1.15H8.5M19.8 1.15h7.35V8.5M27.15 19.8v7.35H19.8M8.5 27.15H1.15V19.8"/><g stroke-width="1.9"><rect x="6.1" y="6.1" width="6.9" height="6.9"/><rect x="15.3" y="6.1" width="6.9" height="6.9"/><rect x="6.1" y="15.3" width="6.9" height="6.9"/><rect x="15.3" y="15.3" width="6.9" height="6.9"/></g><g fill="currentColor" stroke="none"><rect x="8.5" y="8.5" width="2.1" height="2.1"/><rect x="17.7" y="17.7" width="2.1" height="2.1"/></g></svg><div class="l">QR Code</div></button>
+    </div>
+    <div class="card pay">
+      <div class="ttl">Pay again</div>
+      <div class="cols" id="pay-cols"></div>
+      <button class="pill" data-inert><svg viewBox="0 0 13 15.3" fill="none" stroke="currentColor" stroke-width="1.25"><circle cx="5.2" cy="3.4" r="2.8"/><path d="M.7 11.6c0-3.1 2-5 4.5-5 1 0 1.9.3 2.6.8"/><circle cx="9.6" cy="11.4" r="3.1"/><path d="M9.6 9.8v3.2M8 11.4h3.2" stroke-linecap="round"/></svg><span>Add a recipient</span></button>
+    </div>
+    <div class="card act">
+      <div class="ttl">Money sent activity</div>
+      <div class="tabs"><div class="tab t1 on">Recent</div><div class="tab t2" data-inert>Scheduled</div></div>
+      <div class="uline"></div>
+      <div class="rows" id="act-rows"></div>
+      <div class="foot">
+        <button class="q" data-inert aria-label="Help"><svg viewBox="0 0 17.7 17.7" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8.85" cy="8.85" r="8"/><path d="M6.3 7c0-1.6 1.2-2.6 2.6-2.6s2.55.95 2.55 2.3c0 1.9-2.45 2-2.45 3.9" stroke-linecap="round"/><circle cx="8.95" cy="13.2" r="1" fill="currentColor" stroke="none"/></svg></button>
+        <button class="pill" data-inert><span>See all activity</span></button>
       </div>
     </div>
-    <div class="act-wrap">
-      <div class="band"><div class="t">Activity</div><svg class="chev-u" viewBox="0 0 15.7 8.7" fill="none" stroke="currentColor" stroke-width="2.2" style="color:var(--icon)"><path d="M1 7.7l6.85-6.7 6.85 6.7"/></svg></div>
-      <div class="band-line"></div>
-      <div id="act-list"></div>
+    <div class="card mg">
+      <div class="ttl">Management</div>
+      <div class="mrow" style="top:62.4px" id="btn-settings2"><svg style="width:19.7px" viewBox="0 0 20 21" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M17.24 9.56 L19.55 9.57 L19.55 11.43 L17.24 11.44 L15.79 14.95 L17.41 16.60 L16.10 17.91 L14.45 16.29 L10.94 17.74 L10.93 20.05 L9.07 20.05 L9.06 17.74 L5.55 16.29 L3.90 17.91 L2.59 16.60 L4.21 14.95 L2.76 11.44 L0.45 11.43 L0.45 9.57 L2.76 9.56 L4.21 6.05 L2.59 4.40 L3.90 3.09 L5.55 4.71 L9.06 3.26 L9.07 0.95 L10.93 0.95 L10.94 3.26 L14.45 4.71 L16.10 3.09 L17.41 4.40 L15.79 6.05 Z"/><circle cx="10" cy="10.5" r="3.6"/></svg><div class="l">Zelle® settings</div><div class="s">Manage your Zelle® profiles and Zelle® IDs.</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg><div class="line"></div></div>
+      <div class="mrow" style="top:131.4px" data-inert><svg viewBox="0 0 21 21" fill="none" stroke="currentColor"><path stroke-width="1.9" d="M.95 6.3V.95H6.3M14.7.95h5.35V6.3M20.05 14.7v5.35H14.7M6.3 20.05H.95V14.7"/><g stroke-width="1.5"><rect x="4.6" y="4.6" width="5" height="5"/><rect x="11.4" y="4.6" width="5" height="5"/><rect x="4.6" y="11.4" width="5" height="5"/><rect x="11.4" y="11.4" width="5" height="5"/></g><g fill="currentColor" stroke="none"><rect x="6.35" y="6.35" width="1.5" height="1.5"/><rect x="13.15" y="13.15" width="1.5" height="1.5"/></g></svg><div class="l">Zelle® QR codes</div><div class="s">Access your Zelle® QR codes</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg><div class="line"></div></div>
+      <div class="mrow" style="top:200.4px" data-inert><svg viewBox="0 0 21.7 18" fill="none" stroke="currentColor" stroke-width="1.3" style="width:21.7px;height:18px;top:4px;left:17.67px"><circle cx="5" cy="4" r="2.6"/><path d="M.7 11.8c0-2.9 1.9-4.8 4.3-4.8 1 0 1.8.3 2.5.8"/><circle cx="16.7" cy="4" r="2.6"/><path d="M21 11.8c0-2.9-1.9-4.8-4.3-4.8-1 0-1.8.3-2.5.8"/><circle cx="10.85" cy="8.6" r="3"/><path d="M5.4 17.3c0-3.4 2.3-5.6 5.45-5.6s5.45 2.2 5.45 5.6z"/></svg><div class="l">Manage recipients</div><div class="s">Add, edit or delete your Zelle® recipients.</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg></div>
     </div>
   </div>
 </div>
@@ -462,24 +525,27 @@ $$('[data-inert]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();
 let toastT; function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('on'),1400)}
 function spin(ms){return new Promise(r=>{$('#spinner').classList.add('on');setTimeout(()=>{$('#spinner').classList.remove('on');r()},ms)})}
 
-/* ---------- home / activity ---------- */
+/* ---------- home / zelle hub ---------- */
 $('#btn-settings').addEventListener('click',()=>go('settings'));
+$('#btn-settings2').addEventListener('click',()=>go('settings'));
 $('#btn-send').addEventListener('click',()=>go('pick'));
-function renderActivity(){
-  const L=$('#act-list');
-  if(!TX.length){L.innerHTML=`<div class="empty"><svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="#768799" stroke-width="1.6"><circle cx="28" cy="28" r="25"/><path d="M17 28h22M31 20l8 8-8 8"/></svg><div class="h">No Zelle® activity yet</div><div class="p">Money you send with Zelle® will show up here.</div></div>`;return}
-  L.innerHTML=TX.map(t=>`<div class="act-row" data-id="${t.id}">
-    <div class="avatar a36">${avatarHTML(t.photo,t.initial)}</div>
-    <div class="nm">${esc(t.name)}</div>
-    <div class="sub">${t.memo?esc(t.memo):'Sent with Zelle®'}</div>
-    <div class="amt">-${fmtMoney(t.amount)}</div>
-    <div class="st">${rel(t.ts)} · Completed</div>
-    <button class="again" data-again="${t.id}">Send again</button>
-  </div>`).join('');
-  $$('[data-again]').forEach(b=>b.addEventListener('click',()=>{const t=TX.find(x=>String(x.id)===b.dataset.again);if(!t)return;
-    pending={name:t.nick||t.name,reg:t.name,phone:t.phoneRaw||t.phone,photo:t.photo,initial:t.initial,isMain:t.isMain};amountCents=t.amount;memoText='';goAmount()}));
+const dashPhone=s=>{const d=String(s||'').replace(/\D/g,'');return d.length===10?`${d.slice(0,3)}-${d.slice(3,6)}-${d.slice(6)}`:String(s||'').trim()};
+function recentRecipients(){
+  const out=[];const seen=new Set();
+  for(const t of TX){const k=t.phoneRaw||t.name;if(seen.has(k))continue;seen.add(k);out.push({name:t.nick||t.name,reg:t.name,phone:t.phoneRaw||t.phone,photo:t.photo,initial:t.initial,isMain:t.isMain});if(out.length===3)break}
+  for(const r of allRecipients()){if(out.length>=3)break;const k=r.phone||r.name;if(seen.has(k))continue;seen.add(k);out.push(r)}
+  return out;
 }
-setInterval(()=>{if(cur==='home'&&TX.length)renderActivity()},30000);
+function renderActivity(){
+  const rc=recentRecipients();
+  $('#pay-cols').innerHTML=rc.map((r,i)=>`<div class="col" data-i="${i}"><div class="avatar a49">${avatarHTML(r.photo,r.initial,false)}</div><div class="n">${esc(r.name)}</div><div class="p">${esc(dashPhone(r.phone))}</div></div>`).join('');
+  $$('#pay-cols .col').forEach(el=>el.addEventListener('click',async()=>{pending=rc[+el.dataset.i];amountCents=S.amount;memoText='';await spin(500);goAmount()}));
+  const rows=TX.slice(0,3);
+  $('#act-rows').innerHTML=rows.length?rows.map(t=>`<div class="arow" data-inert><div class="nm">${esc(t.nick||t.name)}</div><div class="memo">${esc(t.memo||'')}</div><div class="dt">${fmtDate(new Date(t.ts))}</div><div class="amt">${fmtMoney(t.amount)}</div><div class="st">Completed</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg></div>`).join('')
+    :`<div class="none"><div>You don’t have any recent activity.</div></div>`;
+  $$('#act-rows [data-inert]').forEach(b=>b.addEventListener('click',()=>toast('Not part of this demo')));
+  $('#hub').scrollTop=0;
+}
 
 /* ---------- recipients ---------- */
 let pending=null;
