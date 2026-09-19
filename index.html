@@ -271,6 +271,59 @@ svg{display:block}
 #alert .msg{position:absolute;left:31.7px;right:20px;top:20.5px;font-size:17.4px;line-height:22px;white-space:pre;letter-spacing:-0.2px}
 #alert .ok{position:absolute;left:9px;right:9px;top:102px;height:58.3px;border-radius:29.2px;background:#cfd0d0;font-size:17.4px;line-height:58.3px;text-align:center;color:#000}
 #alert .ok:active{background:#bfc0c0}
+/* ---------- review ---------- */
+#s-rv .grp{position:absolute;left:0;right:0;top:77.3px;display:flex;justify-content:center;align-items:flex-start;height:80px}
+#s-rv .grp .avatar{margin-right:9.6px}
+#s-rv .grp .col{position:relative;height:80px;color:var(--ink)}
+#s-rv .grp .nm{position:absolute;left:0;top:2.3px;font-size:14px;line-height:1;white-space:nowrap}
+#s-rv .grp .rg{position:absolute;left:0;top:22.7px;font-size:12px;line-height:1;white-space:nowrap;color:var(--ink2)}
+#s-rv .grp .rg b{font-weight:600}
+#s-rv .grp .ph{position:absolute;left:0;top:41.7px;font-size:11.95px;line-height:1;white-space:nowrap;color:var(--ink2)}
+#s-rv .grp .pa{position:absolute;left:1.5px;top:60px;height:13.3px;display:flex;align-items:center;white-space:nowrap}
+#s-rv .grp .pa svg{width:12.3px;height:13.3px;color:#1290ff}
+#s-rv .grp .pa span{margin-left:5.3px;font-size:11.9px;line-height:1;margin-top:.2px}
+#s-rv .grp .spacer{visibility:hidden;font-size:12px;line-height:1;white-space:nowrap;font-weight:600}
+#s-rv .chip{position:absolute;left:50%;transform:translateX(-50%);top:156.6px;height:20.33px;padding:.8px 5px 0 20.3px;background:var(--chip);border-radius:2px;font-size:11.95px;line-height:20.33px;color:var(--ink);white-space:nowrap}
+#s-rv .chip svg{position:absolute;left:5px;top:5.33px;width:9.7px;height:11.3px;color:var(--icon)}
+#s-rv .amt-lbl{position:absolute;left:0;right:0;top:191.6px;text-align:center;font-size:13.9px;line-height:1;color:var(--ink2)}
+#s-rv .amt{position:absolute;left:0;right:0;top:219.3px;text-align:center;font-weight:300;font-size:36.2px;line-height:1;color:var(--ink)}
+#s-rv .band{position:absolute;left:0;right:0;top:286px;height:14.6px;background:var(--navbg)}
+#s-rv .row{position:absolute;left:20px;right:21px;height:20px}
+#s-rv .row .l{position:absolute;left:0;top:0;font-size:14px;line-height:1;color:var(--ink);white-space:nowrap}
+#s-rv .row .v{position:absolute;right:0;top:0;font-size:14px;line-height:1;color:var(--ink);white-space:nowrap;max-width:230px;overflow:hidden;text-overflow:ellipsis}
+#s-rv .disc{position:absolute;left:20px;right:16px;bottom:calc(var(--sab) + 69px);font-size:14px;line-height:19px;color:var(--ink2);white-space:pre}
+/* ---------- money sent detail ---------- */
+#s-dt .sent{position:absolute;left:16px;right:16px;top:116.2px;text-align:center;font-size:18px;line-height:1;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#s-dt .sent b{font-weight:600}
+#s-dt .ph{position:absolute;left:0;right:0;top:149.9px;text-align:center;font-weight:600;font-size:17.9px;line-height:1;color:var(--ink)}
+#s-dt .mom{position:absolute;left:0;right:0;top:190.6px;display:flex;justify-content:center;align-items:flex-start;color:var(--blue)}
+#s-dt .mom span{font-size:16.5px;line-height:1;margin-top:.6px}
+#s-dt .mom svg{width:17.7px;height:17.7px;margin-left:8px}
+#s-dt .amt{position:absolute;left:0;right:0;top:234.3px;text-align:center;font-weight:300;font-size:36.2px;line-height:1;color:var(--ink)}
+#s-dt .rows{position:absolute;left:0;right:0;top:292px}
+#s-dt .r{position:relative;height:54.4px;margin:0 16.3px 0 16px;border-bottom:1px solid var(--line)}
+#s-dt .r .l{position:absolute;left:4px;top:20.6px;font-size:14px;line-height:1;color:var(--ink2);white-space:nowrap}
+#s-dt .r .v{position:absolute;right:4.7px;top:20.6px;font-size:14px;line-height:1;color:var(--ink);white-space:nowrap}
+#s-dt .r .v.sm{font-size:11.9px;top:21.5px}
+/* ---------- activity ---------- */
+#s-act .tabs{position:absolute;left:0;right:0;top:54px;height:38.3px;background:var(--navbg);overflow-x:auto;overflow-y:hidden;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+#s-act .tabs::-webkit-scrollbar{display:none}
+#s-act .tab{position:relative;display:inline-block;height:38.3px;padding:0 16.5px;font-weight:600;font-size:14px;line-height:1;color:var(--ink2);vertical-align:top}
+#s-act .tab span{display:block;padding-top:8.2px}
+#s-act .tab.on{color:var(--blue)}
+#s-act .tab.on::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3.7px;background:var(--blue)}
+#s-act .asof{position:absolute;left:0;right:0;top:115px;text-align:center;font-size:11.9px;line-height:1;color:var(--ink2)}
+#s-act .asof-line{position:absolute;left:0;right:0;top:137.3px;height:1px;background:var(--line)}
+#s-act .list{position:absolute;left:0;right:0;top:138.3px;bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding-bottom:calc(var(--sab) + 10px)}
+.xrow{position:relative;height:136.3px;margin:0 16.3px 0 16px;border-bottom:1px solid var(--line);color:var(--ink)}
+.xrow .nm{position:absolute;left:4px;right:110px;top:18.3px;font-size:14px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xrow .memo{position:absolute;left:4px;right:110px;top:37.6px;font-size:14px;line-height:1;color:var(--ink2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xrow .dt{position:absolute;left:4px;top:70.9px;font-size:14px;line-height:1;color:var(--ink2);white-space:nowrap}
+.xrow .st{position:absolute;left:4px;top:103px;font-size:14px;line-height:1;color:var(--ink2);white-space:nowrap}
+.xrow .amt{position:absolute;right:19.4px;top:59.6px;font-size:17.6px;line-height:1;color:var(--blue);white-space:nowrap}
+.xrow .chev{position:absolute;right:3.4px;top:61.7px;width:7.3px;height:12.7px;color:#0088ff}
+.xrow:active{background:#f5f7fa}
+#s-act .empty2{position:absolute;left:16px;right:16px;top:62.9px;text-align:center;font-size:14px;line-height:1;color:var(--ink)}
 /* ---------- settings ---------- */
 #s-settings .form{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:8px 20px calc(var(--sab) + 40px)}
 .fld{position:relative;margin-top:22px}
@@ -359,7 +412,7 @@ svg{display:block}
       <div class="rows" id="act-rows"></div>
       <div class="foot">
         <button class="q" data-inert aria-label="Help"><svg viewBox="0 0 17.7 17.7" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8.85" cy="8.85" r="8"/><path d="M6.3 7c0-1.6 1.2-2.6 2.6-2.6s2.55.95 2.55 2.3c0 1.9-2.45 2-2.45 3.9" stroke-linecap="round"/><circle cx="8.95" cy="13.2" r="1" fill="currentColor" stroke="none"/></svg></button>
-        <button class="pill" data-inert><span>See all activity</span></button>
+        <button class="pill" id="btn-seeall"><span>See all activity</span></button>
       </div>
     </div>
     <div class="card mg">
@@ -421,7 +474,7 @@ svg{display:block}
     <div class="rule rule2"></div>
     <div class="chars"><b id="chars-left">140</b> of <b>140</b> characters remaining.</div>
     <div class="pf-lbl">Pay from</div>
-    <div class="pf-acct">HIGH SCHOOL CHECKING (...<span id="acct4"></span>)</div>
+    <div class="pf-acct"><span id="acct-name"></span> (...<span id="acct4"></span>)</div>
     <div class="pf-bal" id="acct-bal"></div>
     <svg class="pf-chev" viewBox="0 0 14.5 8.2" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 1l6.25 6.2L13.5 1"/></svg>
     <div class="rule rule3"></div>
@@ -488,6 +541,76 @@ might not be able to get your money back once you send it.</div>
   </div>
 </div>
 
+<!-- ================= REVIEW ================= -->
+<div class="screen" id="s-rv">
+  <div class="nav">
+    <button class="nav-back" data-go="amount" aria-label="Back"><svg viewBox="0 0 12.6 16.3" fill="none" stroke="#5b6c7b" stroke-width="2.6"><path d="M10.6 1.3L3.5 8.15l7.1 6.85"/></svg></button>
+    <div class="nav-title">Review</div>
+    <button class="nav-cancel" data-go="home">Cancel</button>
+  </div>
+  <div class="body">
+    <div class="grp">
+      <div class="avatar a49 am" id="rv-avatar"></div>
+      <div class="col">
+        <div class="nm" id="rv-name"></div>
+        <div class="rg">Registered as <b id="rv-reg"></b></div>
+        <div class="ph" id="rv-phone"></div>
+        <div class="pa"><svg viewBox="0 0 12.3 13.3" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6.15" cy="3.75" r="3.05"/><path d="M.75 12.6c0-3.5 2.4-5.75 5.4-5.75s5.4 2.25 5.4 5.75z"/></svg><span>Personal account</span></div>
+        <div class="spacer">Registered as <span id="rv-reg2"></span></div>
+      </div>
+    </div>
+    <div class="chip"><svg viewBox="0 0 9.7 11.3" fill="none" stroke="currentColor" stroke-width="1.1"><rect x=".55" y="1.9" width="8.6" height="8.85" rx=".7"/><path d="M.55 4.6h8.6M2.7 0v2.9M7 0v2.9"/></svg>Zelle® ID active since <span id="rv-since"></span></div>
+    <div class="amt-lbl">Amount</div>
+    <div class="amt" id="rv-amt"></div>
+    <div class="band"></div>
+    <div class="row" style="top:312.9px"><div class="l">Sending as</div><div class="v" id="rv-sender"></div></div>
+    <div class="row" style="top:351.9px"><div class="l">Pay from</div><div class="v" id="rv-acct"></div></div>
+    <div class="row" style="top:391.6px"><div class="l">Send on</div><div class="v" id="rv-date"></div></div>
+    <div class="row" style="top:431.2px"><div class="l">Message to recipient</div><div class="v" id="rv-memo"></div></div>
+    <div class="disc">Only send money to people and businesses you trust.
+Zelle® doesn't offer protection for payments you
+authorize, so you might not be able to get your money
+back once you send it.</div>
+    <button class="btn-primary btn-bottom" id="btn-sendnow">Send it now</button>
+  </div>
+</div>
+
+<!-- ================= MONEY SENT DETAIL ================= -->
+<div class="screen" id="s-dt">
+  <div class="nav">
+    <button class="nav-back" id="dt-back" aria-label="Back"><svg viewBox="0 0 12.6 16.3" fill="none" stroke="#5b6c7b" stroke-width="2.6"><path d="M10.6 1.3L3.5 8.15l7.1 6.85"/></svg></button>
+    <div class="nav-title">Money Sent</div>
+    <button class="nav-cancel" data-go="home">Cancel</button>
+  </div>
+  <div class="body">
+    <div class="sent">Sent to <b id="dt-name"></b></div>
+    <div class="ph" id="dt-phone"></div>
+    <button class="mom" data-inert><span>In moments</span><svg viewBox="0 0 17.7 17.7"><circle cx="8.85" cy="8.85" r="8.85" fill="#005eb8"/><rect x="7.75" y="7.3" width="2.2" height="6.4" rx=".4" fill="#fff"/><circle cx="8.85" cy="4.7" r="1.3" fill="#fff"/></svg></button>
+    <div class="amt" id="dt-amt"></div>
+    <div class="rows">
+      <div class="r"><div class="l">Transaction number</div><div class="v" id="dt-txn"></div></div>
+      <div class="r"><div class="l">Pay from</div><div class="v sm" id="dt-acct"></div></div>
+      <div class="r"><div class="l">Send on</div><div class="v" id="dt-date"></div></div>
+      <div class="r"><div class="l">Status</div><div class="v">Completed</div></div>
+      <div class="r" id="dt-memo-row"><div class="l">Message to recipient</div><div class="v" id="dt-memo"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ACTIVITY ================= -->
+<div class="screen" id="s-act">
+  <div class="nav">
+    <button class="nav-back" data-go="home" aria-label="Back"><svg viewBox="0 0 12.6 16.3" fill="none" stroke="#5b6c7b" stroke-width="2.6"><path d="M10.6 1.3L3.5 8.15l7.1 6.85"/></svg></button>
+    <div class="nav-title">Activity</div>
+  </div>
+  <div class="body">
+    <div class="tabs" id="act-tabs"><button class="tab" data-tab="recv"><span>Money Received</span></button><button class="tab on" data-tab="sent"><span>Money Sent</span></button><button class="tab" data-tab="req"><span>Requests Received</span></button></div>
+    <div class="asof" id="act-asof"></div>
+    <div class="asof-line"></div>
+    <div class="list" id="act-list"></div>
+  </div>
+</div>
+
 <!-- ================= DEMO SETTINGS (hidden, off-flow) ================= -->
 <div class="screen" id="s-settings">
   <div class="nav">
@@ -512,7 +635,9 @@ might not be able to get your money back once you send it.</div>
       <div class="fld"><label for="st-since">Zelle® ID active since</label><input id="st-since" type="text" enterkeyhint="next" autocapitalize="words"></div>
       <div class="set-title">Payment</div>
       <div class="fld"><label for="st-amount">Amount (pre-filled on the Enter Amount screen)</label><input id="st-amount" type="text" inputmode="decimal" enterkeyhint="done"></div>
-      <div class="fld"><label for="st-bal">Checking balance shown under “Pay from”</label><input id="st-bal" type="text" inputmode="decimal" enterkeyhint="done"></div>
+      <div class="fld"><label for="st-acct">Pay-from account name</label><input id="st-acct" type="text" autocapitalize="characters" enterkeyhint="next"></div>
+      <div class="fld"><label for="st-bal">Checking balance shown under “Pay from”</label><input id="st-bal" type="text" inputmode="decimal" enterkeyhint="next"></div>
+      <div class="fld"><label for="st-sender">Your name (shown as “Sending as” on Review)</label><input id="st-sender" type="text" autocapitalize="characters" enterkeyhint="done"></div>
       <div class="set-title">Data</div>
       <button type="button" class="link-btn" id="btn-reroll" style="margin-top:12px">Re-roll random details (account digits, contact initials)</button>
       <button type="button" class="link-btn danger" id="btn-clear-act">Clear activity history</button>
@@ -570,7 +695,7 @@ function since(){const d=new Date();d.setMonth(d.getMonth()-3);return d.toLocale
 const FILLER_NAMES=['Alex Kim','Priya Natarajan','Sam Rivera','Jordan Lee','Taylor Nguyen','Chris Patel'];
 
 /* ---------- state ---------- */
-function defaults(){return{nick:'Mom',reg:'JAYA ANNAVARAPU',phone:'8586499260',since:since(),amount:100,balance:135104,photo:null,
+function defaults(){return{nick:'Mom',reg:'JAYA ANNAVARAPU',phone:'8586499260',since:since(),amount:100,balance:135104,photo:null,sender:'JIXIN WANG',acctName:'HIGH SCHOOL CHECKING',
   acct4:digits(4),fillers:FILLER_NAMES.map(n=>({name:n,initial:LETTERS[rnd(LETTERS.length)],phone:digits(10).replace(/^[01]/,'4'),photo:null}))}}
 let S; try{S=Object.assign(defaults(),JSON.parse(localStorage.getItem(LS_S)||'{}'))}catch(e){S=defaults()}
 if(!S.fillers||!S.fillers.length)S.fillers=defaults().fillers;
@@ -588,7 +713,7 @@ function setAvatar(el,photo,initial,badge=true){el.innerHTML=avatarHTML(photo,in
 
 /* ---------- navigation ---------- */
 let cur='home';
-const screens={home:'#s-home',pick:'#s-pick',amount:'#s-amount',confirm:'#s-confirm',settings:'#s-settings',addrcp:'#s-add'};
+const screens={home:'#s-home',pick:'#s-pick',amount:'#s-amount',confirm:'#s-confirm',settings:'#s-settings',addrcp:'#s-add',review:'#s-rv',detail:'#s-dt',activity:'#s-act'};
 function go(name){
   document.activeElement&&document.activeElement.blur&&document.activeElement.blur();
   $$('.screen').forEach(s=>s.classList.remove('active'));
@@ -598,6 +723,8 @@ function go(name){
   if(name==='amount')renderAmountScreen();
   if(name==='settings')fillSettings();
   if(name==='addrcp')resetAddForm();
+  if(name==='review')renderReview();
+  if(name==='activity')renderActivityScreen();
   hideKbd();
 }
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
@@ -621,9 +748,9 @@ function renderActivity(){
   $('#pay-cols').innerHTML=rc.map((r,i)=>`<div class="col" data-i="${i}"><div class="avatar a49">${avatarHTML(r.photo,r.initial,false)}</div><div class="n">${esc(r.name)}</div><div class="p">${esc(dashPhone(r.phone))}</div></div>`).join('');
   $$('#pay-cols .col').forEach(el=>el.addEventListener('click',async()=>{pending=rc[+el.dataset.i];amountCents=S.amount;memoText='';await spin(500);goAmount()}));
   const rows=TX.slice(0,3);
-  $('#act-rows').innerHTML=rows.length?rows.map(t=>`<div class="arow" data-inert><div class="nm">${esc(t.nick||t.name)}</div><div class="memo">${esc(t.memo||'')}</div><div class="dt">${fmtDate(new Date(t.ts))}</div><div class="amt">${fmtMoney(t.amount)}</div><div class="st">Completed</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg></div>`).join('')
+  $('#act-rows').innerHTML=rows.length?rows.map(t=>`<div class="arow" data-id="${t.id}"><div class="nm">${esc(t.nick||t.name)}</div><div class="memo">${esc(t.memo||'')}</div><div class="dt">${fmtDate(new Date(t.ts))}</div><div class="amt">${fmtMoney(t.amount)}</div><div class="st">Completed</div><svg class="chev" viewBox="0 0 5.7 10.3" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M.8.8l3.9 4.35L.8 9.5"/></svg></div>`).join('')
     :`<div class="none"><div>You don’t have any recent activity.</div></div>`;
-  $$('#act-rows [data-inert]').forEach(b=>b.addEventListener('click',()=>toast('Not part of this demo')));
+  $$('#act-rows .arow').forEach(el=>el.addEventListener('click',()=>{const t=TX.find(x=>String(x.id)===el.dataset.id);if(t)openDetail(t,'home')}));
   $('#hub').scrollTop=0;
 }
 
@@ -654,7 +781,7 @@ function renderAmountScreen(){
   setAvatar($('#am-avatar'),r.photo,r.initial);
   $('#am-nick').textContent=r.name; $('#am-reg').textContent=r.reg; $('#am-phone').textContent=fmtPhone(r.phone);
   $('#am-since').textContent=S.since||since();
-  $('#acct4').textContent=S.acct4; $('#acct-bal').textContent=fmtMoney(S.balance);
+  $('#acct-name').textContent=S.acctName; $('#acct4').textContent=S.acct4; $('#acct-bal').textContent=fmtMoney(S.balance);
   $('#send-date').textContent=fmtDate(new Date());
   $('#amount').value=fmtMoney(amountCents);
   $('#memo').value=memoText; updateChars();
@@ -679,14 +806,7 @@ $('#search').addEventListener('focus',()=>showKbd('alpha'));
 $$('input').forEach(i=>i.addEventListener('blur',()=>setTimeout(()=>{if(!document.activeElement||document.activeElement.tagName!=='INPUT')hideKbd()},50)));
 $('#btn-review').addEventListener('click',async()=>{
   if(amountCents<=0){toast('Enter an amount');amountEl.focus();return}
-  const r=pending||allRecipients()[0];
-  await spin(1100);
-  const tx={id:Date.now(),name:r.reg,nick:r.name,phone:fmtPhone(r.phone),phoneRaw:r.phone,photo:r.photo,initial:r.initial,amount:amountCents,memo:memoText.trim(),ts:Date.now(),isMain:r.isMain};
-  TX.unshift(tx); if(TX.length>50)TX.length=50; saveT();
-  setAvatar($('#cf-avatar'),r.photo,r.initial);
-  $('#cf-recv').textContent=r.reg; $('#cf-amt').textContent=fmtMoney(amountCents);
-  $('#cf-name').textContent=r.reg; $('#cf-reg').textContent=r.reg; $('#cf-phone').textContent=fmtPhone(r.phone); $('#cf-nick').textContent=r.name;
-  go('confirm');
+  await spin(500); go('review');
 });
 $('#btn-done').addEventListener('click',()=>go('home'));
 
@@ -709,16 +829,57 @@ $('#btn-addrcp-submit').addEventListener('click',async()=>{
   pending=r; amountCents=S.amount; memoText=''; await spin(650); goAmount();
 });
 
+/* ---------- review / detail / activity ---------- */
+let backFrom='home', curTx=null, actTab='sent';
+const txnId=t=>{if(!t.txn){const A='abcdefghijklmnopqrstuvwxyz0123456789';t.txn='JPM'+Array.from({length:9},()=>A[rnd(A.length)]).join('');saveT()}return t.txn};
+function fitValue(el,max){el.style.fontSize='';let fs=parseFloat(getComputedStyle(el).fontSize);while(el.scrollWidth>max&&fs>9){fs-=.5;el.style.fontSize=fs+'px'}}
+function renderReview(){
+  const r=pending||allRecipients()[0];
+  setAvatar($('#rv-avatar'),r.photo,r.initial);
+  $('#rv-name').textContent=r.reg; $('#rv-reg').textContent=r.reg; $('#rv-reg2').textContent=r.reg; $('#rv-phone').textContent=fmtPhone(r.phone); $('#rv-since').textContent=S.since||since();
+  $('#rv-amt').textContent=fmtMoney(amountCents); $('#rv-sender').textContent=S.sender; $('#rv-acct').textContent=`${S.acctName} (...${S.acct4})`; $('#rv-date').textContent=fmtDate(new Date()); $('#rv-memo').textContent=memoText.trim();
+}
+$('#btn-sendnow').addEventListener('click',async()=>{
+  const r=pending||allRecipients()[0];
+  await spin(1100);
+  const tx={id:Date.now(),name:r.reg,nick:r.name,phone:fmtPhone(r.phone),phoneRaw:r.phone,photo:r.photo,initial:r.initial,amount:amountCents,memo:memoText.trim(),ts:Date.now(),isMain:r.isMain,acct:`${S.acctName} (...${S.acct4})`};
+  txnId(tx); TX.unshift(tx); if(TX.length>50)TX.length=50; saveT();
+  setAvatar($('#cf-avatar'),r.photo,r.initial);
+  $('#cf-recv').textContent=r.reg; $('#cf-amt').textContent=fmtMoney(amountCents);
+  $('#cf-name').textContent=r.reg; $('#cf-reg').textContent=r.reg; $('#cf-phone').textContent=fmtPhone(r.phone); $('#cf-nick').textContent=r.name;
+  go('confirm');
+});
+function openDetail(t,from){
+  curTx=t; backFrom=from;
+  $('#dt-name').textContent=t.name; $('#dt-phone').textContent=t.phone; $('#dt-amt').textContent=fmtMoney(t.amount);
+  $('#dt-txn').textContent=txnId(t); $('#dt-acct').textContent=t.acct||`${S.acctName} (...${S.acct4})`; $('#dt-date').textContent=fmtDate(new Date(t.ts));
+  $('#dt-memo').textContent=t.memo||''; $('#dt-memo-row').style.display=t.memo?'':'none';
+  go('detail'); fitValue($('#dt-txn'),200);
+}
+$('#dt-back').addEventListener('click',()=>go(backFrom));
+function asOf(){const d=new Date();const tz=(new Intl.DateTimeFormat('en-US',{timeZoneName:'short'}).formatToParts(d).find(p=>p.type==='timeZoneName')||{}).value||'';const hm=d.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',hour12:false});return `As of ${hm} ${tz}, ${fmtDate(d)}`}
+function renderActivityScreen(){
+  $('#act-asof').textContent=asOf();
+  $$('#act-tabs .tab').forEach(b=>b.classList.toggle('on',b.dataset.tab===actTab));
+  const tabs=$('#act-tabs'); const on=$('#act-tabs .tab.on'); tabs.scrollLeft=actTab==='req'?tabs.scrollWidth:0;
+  const L=$('#act-list');
+  if(actTab!=='sent'||!TX.length){L.innerHTML=`<div class="empty2">You don’t have any activity to display.</div>`;return}
+  L.innerHTML=TX.map(t=>`<div class="xrow" data-id="${t.id}"><div class="nm">${esc(t.name)}</div><div class="memo">${esc(t.memo||'')}</div><div class="dt">${fmtDate(new Date(t.ts))}</div><div class="st">Completed</div><div class="amt">${fmtMoney(t.amount)}</div><svg class="chev" viewBox="0 0 8 12.7" fill="none" stroke="currentColor" stroke-width="2"><path d="M1.2 1l5.3 5.35L1.2 11.7"/></svg></div>`).join('');
+  $$('#act-list .xrow').forEach(el=>el.addEventListener('click',()=>{const t=TX.find(x=>String(x.id)===el.dataset.id);if(t)openDetail(t,'activity')}));
+}
+$$('#act-tabs .tab').forEach(b=>b.addEventListener('click',()=>{actTab=b.dataset.tab;renderActivityScreen()}));
+$('#btn-seeall').addEventListener('click',()=>{actTab='sent';go('activity')});
+
 /* ---------- settings ---------- */
 function fillSettings(){
   $('#st-nick').value=S.nick; $('#st-reg').value=S.reg; $('#st-phone').value=fmtPhone(S.phone); $('#st-since').value=S.since;
-  $('#st-amount').value=(S.amount/100).toFixed(2); $('#st-bal').value=(S.balance/100).toFixed(2);
+  $('#st-amount').value=(S.amount/100).toFixed(2); $('#st-bal').value=(S.balance/100).toFixed(2); $('#st-sender').value=S.sender||''; $('#st-acct').value=S.acctName||'';
   setAvatar($('#st-avatar'),S.photo,initialOf(S.reg||S.nick),false);
 }
 function readSettings(){
   S.nick=$('#st-nick').value.trim()||'Mom'; S.reg=$('#st-reg').value.trim()||S.nick.toUpperCase();
   S.phone=$('#st-phone').value.trim(); S.since=$('#st-since').value.trim()||since();
-  S.amount=parseMoney($('#st-amount').value); S.balance=parseMoney($('#st-bal').value); saveS();
+  S.amount=parseMoney($('#st-amount').value); S.balance=parseMoney($('#st-bal').value); S.sender=$('#st-sender').value.trim()||'JIXIN WANG'; S.acctName=$('#st-acct').value.trim().toUpperCase()||'HIGH SCHOOL CHECKING'; saveS();
 }
 $('#btn-save').addEventListener('click',()=>{readSettings();toast('Saved');go('home')});
 $('#btn-save2').addEventListener('click',()=>{readSettings();toast('Saved');go('home')});

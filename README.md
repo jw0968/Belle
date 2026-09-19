@@ -1,7 +1,8 @@
 # Zelle (Chase) send-money clone
 
 Single-file, dependency-free recreation of the Chase app's *Send money with Zelle®* flow:
-Zelle® hub → Select Recipient (or Add Recipient) → Enter Amount → Confirmation → back to the hub (Pay again + Money sent activity).
+Zelle® hub → Select Recipient (or Add Recipient) → Enter Amount → Review → Confirmation → back to the hub.
+Also: Activity (Money Received / Money Sent / Requests Received tabs) and the Money Sent payment-detail screen.
 
 - **Run locally:** open `index.html`, or use the VS Code launch config (`Run and Debug → Preview Zelle clone`),
   which serves the folder on `http://localhost:5173` and opens Chrome at phone size.
