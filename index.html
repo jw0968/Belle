@@ -230,6 +230,47 @@ svg{display:block}
 #s-confirm .siri-b img{position:absolute;left:19px;top:9.3px;width:30.3px;height:30.3px}
 #s-confirm .siri-b span{position:absolute;left:59.3px;top:17.5px;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:600;font-size:13.2px;line-height:1;color:#000;white-space:nowrap}
 #s-confirm .btn-primary{top:707px}
+/* ---------- add recipient ---------- */
+#s-add .body{overflow:hidden}
+#s-add .scroll{position:absolute;left:0;right:0;top:54px;bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:3.3px 0 calc(var(--sab) + 90px)}
+#s-add .top{position:relative;height:82.6px}
+#s-add .rn-lbl{position:absolute;left:0;right:0;top:32.6px;text-align:center;font-size:14px;line-height:1;color:var(--ink2)}
+#s-add .rn-in{position:absolute;left:40px;right:40px;top:47.6px;height:30px;border:0;background:transparent;text-align:center;font-size:16px;line-height:30px;color:var(--ink);padding:0;margin:0;caret-color:var(--blue)}
+#s-add .rn-in::placeholder{color:var(--ink2);opacity:1}
+#s-add .rn-ul{position:absolute;left:15px;right:15px;top:81.6px;height:1px;background:var(--rule)}
+#s-add.err .rn-lbl{color:#7a1e47;font-weight:600}
+#s-add.err .rn-ul{background:#9a3060}
+#s-add .errbox{display:none;position:relative;height:35px}
+#s-add.err .errbox{display:block}
+#s-add .errbox svg{position:absolute;left:18.7px;top:8.4px;width:10.3px;height:9.3px;color:#7a1e47}
+#s-add .errbox div{position:absolute;left:38.7px;top:6.3px;font-size:12px;line-height:16.6px;color:#7a1e47;white-space:pre}
+#s-add .actions{position:relative;display:flex;justify-content:center;margin-top:11px;height:42px;padding-left:4px;color:var(--blue)}
+#s-add .actions .l{position:relative;width:110px;height:42px}
+#s-add .actions .l .t{position:absolute;right:9.3px;top:3.6px;text-align:right;font-size:14px;line-height:19.7px;white-space:nowrap}
+#s-add .actions .l svg{display:inline-block;width:13.7px;height:13.7px;vertical-align:-1.6px;margin-right:3.6px}
+#s-add .actions .vd{width:1px;height:42px;background:var(--rule)}
+#s-add .actions .r{position:relative;width:110px;height:42px}
+#s-add .actions .r svg{position:absolute;left:9.4px;top:15.4px;width:12.3px;height:12.3px}
+#s-add .actions .r .t{position:absolute;left:30px;top:13.1px;font-size:13.6px;line-height:1;white-space:nowrap}
+#s-add .actions button:active{opacity:.6}
+#s-add .atleast{margin:27px 0 0 20px;font-weight:600;font-size:14px;line-height:1;color:var(--ink)}
+#s-add .f{position:relative;height:67.6px;margin-top:10.8px}
+#s-add .f.first{margin-top:13.3px}
+#s-add .f label{position:absolute;left:20px;top:17.2px;font-size:14px;line-height:1;color:var(--ink2);white-space:nowrap}
+#s-add .f input{position:absolute;left:20px;right:20px;top:31.9px;height:30px;border:0;background:transparent;font-size:16px;line-height:30px;color:var(--ink);padding:0;margin:0;caret-color:var(--blue)}
+#s-add .f input::placeholder{color:var(--ink2);opacity:1}
+#s-add .f .ul{position:absolute;left:20px;right:20.3px;top:66.6px;height:1px;background:var(--rule)}
+#s-add .help{margin:7.1px 0 0 20px;font-size:12px;line-height:1;color:var(--ink2);white-space:nowrap}
+#s-add .para{margin:36.3px 0 0 20px;font-size:12px;line-height:16.35px;color:var(--ink2);white-space:pre}
+#s-add .para+.para{margin-top:16.35px}
+#s-add .btn-primary{z-index:3}
+/* iOS-style alert */
+#alert{position:absolute;inset:0;display:none;background:rgba(0,0,0,.2);z-index:80}
+#alert.on{display:block}
+#alert .box{position:absolute;left:40px;top:50%;width:320.7px;height:170.3px;margin-top:-71px;background:rgba(238,238,238,.96);border-radius:34px;box-shadow:0 12px 40px rgba(0,0,0,.22);font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',Helvetica,Arial,sans-serif;color:#000}
+#alert .msg{position:absolute;left:31.7px;right:20px;top:20.5px;font-size:17.4px;line-height:22px;white-space:pre;letter-spacing:-0.2px}
+#alert .ok{position:absolute;left:9px;right:9px;top:102px;height:58.3px;border-radius:29.2px;background:#cfd0d0;font-size:17.4px;line-height:58.3px;text-align:center;color:#000}
+#alert .ok:active{background:#bfc0c0}
 /* ---------- settings ---------- */
 #s-settings .form{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:8px 20px calc(var(--sab) + 40px)}
 .fld{position:relative;margin-top:22px}
@@ -340,7 +381,7 @@ svg{display:block}
     <svg class="search-ic" viewBox="0 0 18 18" fill="none" stroke="#5b6c7b"><circle cx="7.4" cy="7.4" r="6.4" stroke-width="1.6"/><path d="M12.1 12.1l5.2 5.2" stroke-width="1.9"/></svg>
     <input class="search-in" id="search" type="text" inputmode="search" enterkeyhint="search" autocomplete="off" autocorrect="off" autocapitalize="words" spellcheck="false" aria-label="Search your recipients">
     <div class="search-line"></div>
-    <button class="add" data-inert><svg viewBox="0 0 13.7 13.7" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6.85" cy="6.85" r="6.2"/><path d="M6.85 3.4v6.9M3.4 6.85h6.9"/></svg><span>Add</span></button>
+    <button class="add" id="btn-addrcp"><svg viewBox="0 0 13.7 13.7" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6.85" cy="6.85" r="6.2"/><path d="M6.85 3.4v6.9M3.4 6.85h6.9"/></svg><span>Add</span></button>
     <div class="hint">Search your recipients</div>
     <div class="qr" data-inert>
       <svg class="ic" viewBox="0 0 28.3 28.3" fill="none" stroke="currentColor"><path stroke-width="2.3" d="M1.15 8.5V1.15H8.5M19.8 1.15h7.35V8.5M27.15 19.8v7.35H19.8M8.5 27.15H1.15V19.8"/><g stroke-width="1.9"><rect x="6.1" y="6.1" width="6.9" height="6.9"/><rect x="15.3" y="6.1" width="6.9" height="6.9"/><rect x="6.1" y="15.3" width="6.9" height="6.9"/><rect x="15.3" y="15.3" width="6.9" height="6.9"/></g><g fill="currentColor" stroke="none"><rect x="8.5" y="8.5" width="2.1" height="2.1"/><rect x="17.7" y="8.5" width="2.1" height="2.1"/><rect x="8.5" y="17.7" width="2.1" height="2.1"/><rect x="17.7" y="17.7" width="2.1" height="2.1"/></g></svg>
@@ -410,6 +451,43 @@ svg{display:block}
   </div>
 </div>
 
+<!-- ================= ADD RECIPIENT ================= -->
+<div class="screen" id="s-add">
+  <div class="nav">
+    <button class="nav-back" data-go="pick" aria-label="Back"><svg viewBox="0 0 12.6 16.3" fill="none" stroke="#5b6c7b" stroke-width="2.6"><path d="M10.6 1.3L3.5 8.15l7.1 6.85"/></svg></button>
+    <div class="nav-title">Add Recipient</div>
+    <button class="nav-cancel" data-go="home">Cancel</button>
+  </div>
+  <div class="body">
+    <form class="scroll" id="add-form" autocomplete="off">
+      <div class="top">
+        <div class="rn-lbl">Recipient Name</div>
+        <input class="rn-in" id="ad-name" type="text" placeholder="Name" autocapitalize="words" autocorrect="off" enterkeyhint="next" aria-label="Recipient Name">
+        <div class="rn-ul"></div>
+      </div>
+      <div class="errbox"><svg viewBox="0 0 10.3 9.3" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"><path d="M5.15.7L9.75 8.7H.55z"/><path d="M5.15 3.4v2.6" stroke-linecap="round"/><circle cx="5.15" cy="7.3" r=".55" fill="currentColor" stroke="none"/></svg><div>Please tell us a name using only letters, numbers and/or these
+characters: ./'&amp;()</div></div>
+      <div class="actions">
+        <button type="button" class="l" data-inert><div class="t"><svg viewBox="0 0 13.7 13.7" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="6.85" cy="6.85" r="6.2"/><path d="M6.85 3.4v6.9M3.4 6.85h6.9"/></svg>Add from<br>phone contacts</div></button>
+        <div class="vd"></div>
+        <button type="button" class="r" data-inert><svg viewBox="0 0 28.3 28.3" fill="none" stroke="currentColor"><path stroke-width="2.6" d="M1.15 8.5V1.15H8.5M19.8 1.15h7.35V8.5M27.15 19.8v7.35H19.8M8.5 27.15H1.15V19.8"/><g stroke-width="2.2"><rect x="6.1" y="6.1" width="6.9" height="6.9"/><rect x="15.3" y="6.1" width="6.9" height="6.9"/><rect x="6.1" y="15.3" width="6.9" height="6.9"/><rect x="15.3" y="15.3" width="6.9" height="6.9"/></g><g fill="currentColor" stroke="none"><rect x="8.5" y="8.5" width="2.1" height="2.1"/><rect x="17.7" y="8.5" width="2.1" height="2.1"/><rect x="8.5" y="17.7" width="2.1" height="2.1"/><rect x="17.7" y="17.7" width="2.1" height="2.1"/></g></svg><div class="t">Scan QR code</div></button>
+      </div>
+      <div class="atleast">Enter at least 1 of the below:</div>
+      <div class="f first"><label for="ad-phone">Recipient’s mobile number</label><input id="ad-phone" type="text" inputmode="tel" placeholder="Example: 5555555555" enterkeyhint="next"><div class="ul"></div></div>
+      <div class="f"><label for="ad-email">Recipient’s email address</label><input id="ad-email" type="text" inputmode="email" autocapitalize="none" autocorrect="off" placeholder="Example: email@domain.com" enterkeyhint="next"><div class="ul"></div></div>
+      <div class="f"><label for="ad-tag">Recipient’s Zelle® tag (available for businesses)</label><input id="ad-tag" type="text" autocapitalize="none" autocorrect="off" placeholder="Example: jdoe-landscaping-co" enterkeyhint="done"><div class="ul"></div></div>
+      <div class="help">A Zelle® tag is a unique ID—not a nickname, memo or label.</div>
+      <div class="para">We’ll send a text to this mobile number if your recipient agreed
+to received texts from us. Otherwise, your recipient will get a
+text directly from the Zelle® service or from their bank.</div>
+      <div class="para">Only send money to people and businesses you trust. Zelle®
+doesn’t offer protection for payments you authorize, so you
+might not be able to get your money back once you send it.</div>
+    </form>
+    <button class="btn-primary btn-bottom" id="btn-addrcp-submit">Add Recipient</button>
+  </div>
+</div>
+
 <!-- ================= DEMO SETTINGS (hidden, off-flow) ================= -->
 <div class="screen" id="s-settings">
   <div class="nav">
@@ -461,6 +539,7 @@ svg{display:block}
   </div>
   <div class="foot"></div>
 </div>
+<div id="alert"><div class="box"><div class="msg"></div><button class="ok">OK</button></div></div>
 <div id="spinner"><div class="ring"></div></div>
 <div id="toast"></div>
 <div id="splash"><img alt="Zelle" src="data:image/png;base64,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"></div>
@@ -509,7 +588,7 @@ function setAvatar(el,photo,initial,badge=true){el.innerHTML=avatarHTML(photo,in
 
 /* ---------- navigation ---------- */
 let cur='home';
-const screens={home:'#s-home',pick:'#s-pick',amount:'#s-amount',confirm:'#s-confirm',settings:'#s-settings'};
+const screens={home:'#s-home',pick:'#s-pick',amount:'#s-amount',confirm:'#s-confirm',settings:'#s-settings',addrcp:'#s-add'};
 function go(name){
   document.activeElement&&document.activeElement.blur&&document.activeElement.blur();
   $$('.screen').forEach(s=>s.classList.remove('active'));
@@ -518,6 +597,7 @@ function go(name){
   if(name==='pick'){$('#search').value='';renderRecipients('')}
   if(name==='amount')renderAmountScreen();
   if(name==='settings')fillSettings();
+  if(name==='addrcp')resetAddForm();
   hideKbd();
 }
 $$('[data-go]').forEach(b=>b.addEventListener('click',()=>go(b.dataset.go)));
@@ -551,7 +631,7 @@ function renderActivity(){
 let pending=null;
 function allRecipients(){
   const main={name:S.nick,reg:S.reg,phone:S.phone,photo:S.photo,initial:initialOf(S.reg||S.nick),isMain:true};
-  return [main].concat(S.fillers.map(f=>({name:f.name,reg:f.name.toUpperCase(),phone:f.phone,photo:null,initial:f.initial,isMain:false})));
+  return [main].concat((S.custom||[]).map(c=>Object.assign({},c)),S.fillers.map(f=>({name:f.name,reg:f.name.toUpperCase(),phone:f.phone,photo:null,initial:f.initial,isMain:false})));
 }
 function renderRecipients(q){
   q=(q||'').trim().toLowerCase();
@@ -609,6 +689,25 @@ $('#btn-review').addEventListener('click',async()=>{
   go('confirm');
 });
 $('#btn-done').addEventListener('click',()=>go('home'));
+
+/* ---------- add recipient ---------- */
+$('#btn-addrcp').addEventListener('click',()=>go('addrcp'));
+$('#add-form').addEventListener('submit',e=>e.preventDefault());
+function showAlert(msg){$('#alert .msg').textContent=msg;$('#alert').classList.add('on');hideKbd()}
+$('#alert .ok').addEventListener('click',()=>$('#alert').classList.remove('on'));
+function resetAddForm(){['#ad-name','#ad-phone','#ad-email','#ad-tag'].forEach(s=>$(s).value='');$('#s-add').classList.remove('err');$('#s-add .scroll').scrollTop=0}
+$('#ad-name').addEventListener('input',()=>{if($('#s-add').classList.contains('err')&&/^[A-Za-z0-9 .\/'’&()]+$/.test($('#ad-name').value.trim()))$('#s-add').classList.remove('err')});
+$$('#s-add input').forEach(i=>{i.addEventListener('focus',()=>showKbd(i.id==='ad-phone'?'num':'alpha'));i.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();const n=i.closest('.f')?i.closest('.f').nextElementSibling:null;const nx=n&&n.querySelector&&n.querySelector('input');nx?nx.focus():i.blur()}})});
+$('#btn-addrcp-submit').addEventListener('click',async()=>{
+  const name=$('#ad-name').value.trim(), phone=$('#ad-phone').value.trim(), email=$('#ad-email').value.trim(), tag=$('#ad-tag').value.trim();
+  const nameOk=/^[A-Za-z0-9 .\/'’&()]+$/.test(name);
+  $('#s-add').classList.toggle('err',!nameOk);
+  if(!name||!(phone||email||tag)){showAlert('Enter your recipient’s name, and\nat least 1 of these: mobile number,\nemail address or Zelle® tag.');return}
+  if(!nameOk)return;
+  const r={name,reg:name.toUpperCase(),phone:phone||email||tag,photo:null,initial:initialOf(name),isMain:false,custom:true};
+  S.custom=(S.custom||[]).filter(c=>c.phone!==r.phone); S.custom.unshift(r); if(S.custom.length>20)S.custom.length=20; saveS();
+  pending=r; amountCents=S.amount; memoText=''; await spin(650); goAmount();
+});
 
 /* ---------- settings ---------- */
 function fillSettings(){
